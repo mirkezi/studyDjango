@@ -13,8 +13,18 @@
     <nav>
         <ul class="container">
             <li> <a href="/">Homepage</a></li>
-            <li> <a href="login"> Login</a></li>
             <li> <a href="about"> About</a></li>
+            <li><p>Beginner Projects</p></li>
+            <li><p>Intermediate Projects</p></li>
+            <li><p>Advanced Projects</p></li>
+            {% if user.is_authenticated %}
+                <li><p>Welcome, {{ user.username }}!</p></li>
+                <li><a href="logout">Logout</a></li>
+                <li><a href="admin">Admin Page</a></li>
+            {% else %}
+                <li><p>You are not logged in.</p></li>
+                <li><a href="login">Login</a></li>
+            {% endif %}
         </ul>
     </nav>
     <main>
