@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #2b2d4251; text-align: center;
+}
+main {
+    margin-top: 60px;
+}
+.container{
+    background-color: #2b2d42;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+}
+.container li{
+    list-style-type: none;
+}
+.container a{
+    display: inline-block;
+    padding: 25px;
+    margin: 0 25px;
+    text-align: center;
+    color: #ffffff;
+}
+footer {
+    margin-top: 50px;
+  }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>studyDjango</title>
+</head>
+<body>
+    <header>
+        <h1>studyDjango</h1>
+        <p></p>
+    </header>
+    <nav>
+        <ul class="container">
+            <li> <a href="/">Homepage</a></li>
+            <li> <a href="login"> Login</a></li>
+            <li> <a href="about"> About</a></li>
+        </ul>
+    </nav>
+    <main>
+        
+        {% block content%}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>Copyright Mirko V. - studyDjango</p>
+    </footer>
+</body>
+</html>
